@@ -2,22 +2,36 @@
 
 ## tasks
 
-* [ ] implementar primeira rota HTTP
-    * [ ] definir tecnologias e linguagem para implementar nossa API
-    * [ ] implementar uma rota HTTP que retorne 200 e não faça mais nada
+* [ ] implementing first HTTP router
+    * [ ] defining resources/tools and code language for implementing our API 
+    * [ ] implementing a HTPP router/path returning nothing but 200
 
-* [ ] criar infraestrutura necessaria para disponibilizar um servidor 
-    * [ ] definir um processo e tecnologias para fazer build
-    * [ ] definir um processo e tecnologias para fazer deploy
-    * [ ] definir aonde vai ficar nosso servidor
+* [ ] creating a required infrastructure to set our server up
+    * [ ] defining the process and resources/tools required to build our application up
+    * [ ] defining the process and resources/tools required to deploy our application up
+    * [ ] defining where our server will be hosted
 
-* [ ] tornar nosso servidor seguro com TLS
-    * [ ] gerar certificado de autenticação 
-    * [ ] mudar rota HTTP para HTTPS
+* [ ] making our server safe with TLS 
+    * [ ] generating our authentication Certificate
+    * [ ] changing our HTTP router for HTTPS router
 
 ## getting started 
 
-* [ ] o que o servidor faz atualmente e como utiliza-lo
-* [ ] dependencias de ferramentas para execucao do projeto (Node Packet Manager, ...)
-* [ ] passo a passo para executar o projeto (localhost/ping)
-* [ ] passo a passo para testar o projeto
+* [ ] what's the function of the server and how to use it
+    * [ ] we create a method that calls HTTP protocol to establish the project's route;
+    * [ ] then the server keeps the project online and available for clients to access it;
+    * [ ] for running the server, we have to get it started on node express
+    
+* [ ] tool dependencies for project creation
+    * [ ] nodejs
+    * [ ] npm
+    * [ ] node express
+    * [ ] http
+    * [ ] debug
+    * [ ] postman
+    
+* [ ] executing the project step by step (localhost/ping)
+
+* [ ] testing the project step by step
+
+    

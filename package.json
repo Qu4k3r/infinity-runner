@@ -1,0 +1,30 @@
+{
+  "name": "infinity-runner",
+  "version": "1.0.0",
+  "description": "an endless runner style game",
+  "main": "index.js",
+  "scripts": {
+    "test": "calling"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qu4k3r/infinity-runner.git"
+  },
+  "keywords": [
+    "runner",
+    "infinity",
+    "endless",
+    "game"
+  ],
+  "author": "@Qu4k3r and @Duerno",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qu4k3r/infinity-runner/issues"
+  },
+  "homepage": "https://github.com/Qu4k3r/infinity-runner#readme",
+  "dependencies": {
+    "debug": "^4.2.0",
+    "express": "^4.17.1",
+    "http": "0.0.1-security"
+  }
+}
