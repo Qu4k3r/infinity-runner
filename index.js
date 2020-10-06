@@ -1,23 +1,43 @@
 'use strict'
 
+// const debug = require('debug')('nodestr:server')
+// const express = require('express')
+// const app = express()
+// app.set('port', port)
+
 const http = require('http')
-const debug = require('debug')('nodestr:server')
-const express = require('express')
-
-const app = express()
+const hostname = 'localhost'
 const port = 3000
-app.set('port', port)
+const server = http.createServer((req, res) => {
+    // req is an http.IncomingMessage, which is readable stream
+    // res is an http.ServerResponse, which is a writable stream
 
-const server = http.createServer(app)
-const router = express.Router()
+    // this line says: headers, methods and url are req properties
+    const {headers, method, url} = req
+    if (req.method === 'GET' && req.url === '/healthcheck') {
+        // implicit header
+    res.statusCode = 200
+    res.setHeader('Content-Type', 'this will appear in server-response')
+    // PS.: setHeader(name, value)
 
-const route = router.get('/', (req, res, next) => {
-    res.status(200).send({
-        title: "Node Store API",
-        version: "0.0.1"
+    // explicit header
+    /*
+    res.writeHead(200, {
+        'Content-Type': 'this will appear in server-response'
     })
+    */
+    
+    res.end('Hello World!\n')
+    }
+    else {
+        res.statusCode = 404
+        res.end('404! Page Not Found!\n')
+    }
 })
-app.use('/', route)
+// const router = express.Router()
 
-server.listen(port)
-console.log('API rodando na porta ' + port)
+// app.use('/', route)
+
+server.listen(port, hostname, () => {
+    console.log(`Server running at http://${hostname}:${port}`)
+})
