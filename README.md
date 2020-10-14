@@ -13,7 +13,7 @@ Infinity-runner is an API, endless runner style game, made with NodeJS and React
     * Execute the following command: `npm start`
     * Have fun
 
-**PS.: if you don't have the npm repository installed, you must install in order to make the game runs**
+**PS.: if you don't have the npm repository installed, you must install it in order to make the game runs**
 
 ## Contributing
 If you have some good ideas to contribute, you are welcome to make pull requests;
